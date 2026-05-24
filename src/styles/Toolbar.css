@@ -1,0 +1,39 @@
+.toolbar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e1e4e8;
+  align-items: center;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 0.5rem;
+  border-right: 1px solid #e1e4e8;
+  padding-right: 1rem;
+}
+
+.toolbar-group:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.toolbar-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.toolbar-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #d1d5da;
+}
+
+.toolbar-btn:active {
+  background-color: #e8e8e8;
+}

@@ -1,0 +1,85 @@
+.file-manager {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.file-manager-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e1e4e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-manager-header h2 {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.file-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.file-item:hover {
+  background-color: #f6f8fb;
+  border-color: #d1d5da;
+}
+
+.file-item.active {
+  background-color: #e8f0fe;
+  border-color: #667eea;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+  word-break: break-word;
+}
+
+.file-date {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.file-delete {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.file-delete:hover {
+  color: #d32f2f;
+}
+
+.empty-message {
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #999;
+}
